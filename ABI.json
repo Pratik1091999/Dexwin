@@ -1,0 +1,317 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "manager",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "eventid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betvalue",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betStarttime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betEndtime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "losslimit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dailylosslimit",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct basketballBets.Bet",
+				"name": "_a",
+				"type": "tuple"
+			}
+		],
+		"name": "CreateBet",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "Manager",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint8",
+				"name": "_winner",
+				"type": "uint8"
+			}
+		],
+		"name": "bet_logic",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "betlist",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "eventid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "creator",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "betvalue",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "betStarttime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "betEndtime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "losslimit",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "dailylosslimit",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_user",
+				"type": "address"
+			}
+		],
+		"name": "claimpayout",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint8",
+				"name": "option",
+				"type": "uint8"
+			},
+			{
+				"internalType": "string",
+				"name": "bettype",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "oddvalue",
+				"type": "uint256"
+			}
+		],
+		"name": "placebet",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_usdt",
+				"type": "address"
+			}
+		],
+		"name": "setusdt",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "odd",
+				"type": "uint256"
+			}
+		],
+		"name": "updatebet",
+		"outputs": [
+			{
+				"internalType": "uint256[2]",
+				"name": "",
+				"type": "uint256[2]"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "usdt",
+		"outputs": [
+			{
+				"internalType": "contract IERC20",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "user_info",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "userlist",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "betid",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint8",
+				"name": "betOption",
+				"type": "uint8"
+			},
+			{
+				"internalType": "uint256",
+				"name": "bettime",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "rewardamount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "bettype",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "betlimit",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "dailyuserlimit",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "payoutOdds",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "winner",
+				"type": "bool"
+			},
+			{
+				"internalType": "enum basketballBets.state",
+				"name": "_state",
+				"type": "uint8"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
